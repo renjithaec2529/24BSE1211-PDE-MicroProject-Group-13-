@@ -10,10 +10,10 @@ This project derives and numerically verifies the quantized energy states of an 
 
 | File | Description |
 |---|---|
-| `P_1.pdf` | Phase 1 — analytical derivation of the theory, from the governing PDE to the final Fourier series solution |
-| `project_detailed.ipynb` | Phase 2 — Python notebook that computes, visualizes, and numerically verifies the results from Phase 1 |
+| `LaTeX.tex` | Phase 1 — analytical derivation of the theory, from the governing PDE to the final Fourier series solution |
+| `CODE.ipynb` | Phase 2 — Python notebook that computes, visualizes, and numerically verifies the results from Phase 1 |
 
-## Phase 1 — Theoretical Derivation (`P_1.pdf`)
+## Phase 1 — Theoretical Derivation (`LaTeX.tex`)
 
 Solves the equation `iℏ ∂Ψ/∂t = -(ℏ²/2m) ∂²Ψ/∂x²` for a particle trapped in a well of length `L` using **separation of variables**:
 
@@ -31,7 +31,7 @@ Solves the equation `iℏ ∂Ψ/∂t = -(ℏ²/2m) ∂²Ψ/∂x²` for a particl
 
 **Key takeaway:** confinement is what forces the electron's energy to become discrete rather than continuous, and the spacing between allowed energies scales as `1/L²` — the physical basis of quantum dots, quantum wells, and nanoscale transistor channels.
 
-## Phase 2 — Computational Verification (`project_detailed.ipynb`)
+## Phase 2 — Computational Verification (`CODE.ipynb`)
 
 Implements and visualizes the Phase 1 theory for an electron in a well of width `L = 1.0 nm`, in seven stages:
 
